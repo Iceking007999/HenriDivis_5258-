@@ -1,0 +1,14 @@
+name: Windows Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Testando Windows
+        run: |
+          Write-Host "Windows Runner funcionando!"
+          systeminfo
